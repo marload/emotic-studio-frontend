@@ -1,6 +1,17 @@
 import React from "react";
 
-import ContentsBannerItem from "./ContentsBannerItem";
+function ContentsBannerItem({ title, picture }) {
+    return (
+        <div className="contents-banner-item">
+            <img
+                className="contents-banner-item__picture"
+                src={picture}
+                alt={title}
+            ></img>
+            <span className="contents-banner-item__title">{title}</span>
+        </div>
+    );
+}
 
 function ContentsBanner({ data: { title, subTitle, contentsData } }) {
     return (
