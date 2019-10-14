@@ -8,9 +8,12 @@ import Home from "./Home";
 
 const App = () => {
     return (
-        <div>
+        <div className="App">
             <Header />
             <Route exact path="/" component={Home} />
+            <Route exact path="/guide" component={Home} />
+            <Route exact path="/faq" component={Home} />
+            <Route exact path="/mystudio" component={Home} />
             <Footer />
         </div>
     );

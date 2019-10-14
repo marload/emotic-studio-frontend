@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+}
+
+.header {
+    height: 50px;
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav__language {
+        margin-left: 40px;
+    }
+    .header__nav {
+        .nav-item {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #999999;
+            font-size: 0.8rem;
+        }
+    }
+}
