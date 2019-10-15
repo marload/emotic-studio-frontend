@@ -1,8 +1,22 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+
+import "./scss/MainBanner.scss";
 
 import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+
+const useStyles = makeStyles({
+    Button: {
+        borderRadius: 20,
+        height: 40,
+        width: 120,
+        color: "white"
+    }
+});
 
 function MainBanner() {
+    const classes = useStyles();
     return (
         <div className="main-banner">
             <h2 className="main-banner__title">
@@ -12,11 +26,16 @@ function MainBanner() {
                 EmoticStudio에 등록된 이모티콘은 EmoticBox를 통해 여러 플랫폼
                 유저들에게 사용 됩니다.
             </p>
-            <div className="main-banner__reg-btn">
-                <Link to="#등록" className="main-banner__reg-link">
-                    <button>등록하기</button>
-                </Link>
-            </div>
+            <Link to="#등록" className="main-banner__reg-link">
+                <Button
+                    className={classes.Button}
+                    variant="contained"
+                    color="secondary"
+                    buttonStyle={{ borderRadius: 50 }}
+                >
+                    <span>등록하기</span>
+                </Button>
+            </Link>
         </div>
     );
 }

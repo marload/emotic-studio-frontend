@@ -1,0 +1,25 @@
+.main-banner {
+    margin: 0 auto;
+    width: 1040px;
+    height: 400px;
+    background-image: url("/images/main-banner-backgorund.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    &__paragraph {
+        margin: 0;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    .reg-btn--style {
+        text-decoration: none;
+    }
+}
