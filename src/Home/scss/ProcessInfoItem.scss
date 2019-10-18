@@ -1,0 +1,25 @@
+li {
+    list-style-type: none;
+    .process-info-item {
+        &__order-number {
+            color: #f5c62d;
+            font-size: 2rem;
+        }
+        &__image {
+            width: 60px;
+        }
+        &__title {
+            font-size: 1rem;
+            margin-top: 0;
+        }
+        &__paragraph {
+            opacity: 0.5;
+            font-size: 0.8rem;
+        }
+        &__column--flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

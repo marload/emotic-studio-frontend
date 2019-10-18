@@ -23,8 +23,8 @@ function MainBanner() {
                 여러분의 이모티콘을 전 세계 플랫폼과 함께 해보세요.
             </h2>
             <p className="main-banner__paragraph">
-                EmoticStudio에 등록된 이모티콘은 EmoticBox를 통해 여러 플랫폼
-                유저들에게 사용 됩니다.
+                EmoticStudio에 등록된 이모티콘은 EmoticBox<br></br>
+                통해 여러 플랫폼 유저들에게 사용 됩니다.
             </p>
             <Link to="#등록" className="main-banner__reg-link">
                 <Button
@@ -33,7 +33,7 @@ function MainBanner() {
                     color="secondary"
                     buttonStyle={{ borderRadius: 50 }}
                 >
-                    <span>등록하기</span>
+                    <span className="reg-btn--style">등록하기</span>
                 </Button>
             </Link>
         </div>

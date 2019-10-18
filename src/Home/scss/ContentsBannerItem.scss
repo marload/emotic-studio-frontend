@@ -1,0 +1,27 @@
+.contents-banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__picture {
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #ebebeb;
+        -webkit-transition: border 200ms ease-out;
+        -moz-transition: border 200ms ease-out;
+        -o-transition: border 200ms ease-out;
+        transition: border 200ms ease-out;
+    }
+    &__picture:hover {
+        border: 1px solid #e83428;
+    }
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.8rem;
+        display: none;
+    }
+}

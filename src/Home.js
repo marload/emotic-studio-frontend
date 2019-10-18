@@ -12,23 +12,23 @@ const contentsBannerData1 = {
     contentsData: [
         {
             title: "정보미기재",
-            image: "#"
+            image: "/images/emoji-example.jpg"
         },
         {
             title: "정보미기재",
-            image: "#"
+            image: "/images/emoji-example.jpg"
         },
         {
             title: "정보미기재",
-            image: "#"
+            image: "/images/emoji-example.jpg"
         },
         {
             title: "정보미기재",
-            image: "#"
+            image: "/images/emoji-example.jpg"
         },
         {
             title: "정보미기재",
-            image: "#"
+            image: "/images/emoji-example.jpg"
         }
     ]
 };

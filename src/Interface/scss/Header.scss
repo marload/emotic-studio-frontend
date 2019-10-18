@@ -3,8 +3,9 @@ header {
 }
 
 .header {
+    box-sizing: border-box;
     height: 50px;
-    width: 1040px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0px 120px;
     display: flex;
@@ -14,12 +15,19 @@ header {
     .nav__language {
         margin-left: 40px;
     }
+    .nav__language:hover {
+        color: black;
+    }
+
     .header__nav {
         .nav-item {
             margin-left: 30px;
             text-decoration: none;
             color: #999999;
             font-size: 0.8rem;
+        }
+        .nav-item:hover {
+            color: black;
         }
     }
 }
