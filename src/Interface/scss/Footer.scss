@@ -1,0 +1,40 @@
+.upper-footer-contents {
+    display: inline-block;
+    width: 600px;
+    padding: 50px 0px;
+    &--flex {
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 300;
+        text-align: start;
+        display: flex;
+        h4 {
+            color: white;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 300;
+        }
+        p {
+            color: #999999;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 300;
+        }
+        span {
+            color: #999999;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer {
+    box-sizing: border-box;
+    // height: 50px;
+    // width: 1200px;
+    margin: 0 auto;
+    &__upper {
+        background-color: #424347;
+        text-align: center;
+        display: block;
+        height: 280px;
+    }
+}

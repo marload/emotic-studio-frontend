@@ -67,8 +67,14 @@ function Home() {
             <MainBanner />
             <SubBanner />
             <ProcessInfo />
-            <ContentsBanner data={contentsBannerData1} />
-            <ContentsBanner data={contentsBannerData2} />
+            <ContentsBanner
+                data={contentsBannerData1}
+                backgroundColor="#fbfbfb"
+            />
+            <ContentsBanner
+                data={contentsBannerData2}
+                backgroundColor="white"
+            />
         </div>
     );
 }

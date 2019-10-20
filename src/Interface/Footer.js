@@ -1,23 +1,27 @@
 import React from "react";
 
+import "./scss/Footer.scss";
+
 import { Link } from "react-router-dom";
 
 function UpperFooterContent({ title, paragraph, picture, link }) {
     return (
-        <div className="upper-footer-conents">
-            <div className="upper-footer-contents__column">
-                <h3>{title}</h3>
-                <p>{paragraph}</p>
-                <Link to={link} className="upper-footer-contents__link">
-                    바로가기 >
-                </Link>
-            </div>
-            <div className="upper-footer-contents__column">
-                <img
-                    className="upper-footer-contents__image"
-                    src={picture}
-                    alt={title}
-                ></img>
+        <div className="upper-footer-contents">
+            <div className="upper-footer-contents--flex">
+                <div className="upper-footer-contents__column">
+                    <h4>{title}</h4>
+                    <p>{paragraph}</p>
+                    <Link to={link} className="upper-footer-contents__link">
+                        바로가기 >
+                    </Link>
+                </div>
+                <div className="upper-footer-contents__column">
+                    <img
+                        className="upper-footer-contents__image"
+                        src={picture}
+                        alt={title}
+                    ></img>
+                </div>
             </div>
         </div>
     );
@@ -55,17 +59,16 @@ function LowerFooterLeftContent() {
 
 function Footer() {
     return (
-        <div className="footer">
-            <div className="footer__upper">
-                <div className="upper__column">
+        <div className="footer--background">
+            <div className="footer">
+                <div className="footer__upper">
                     <UpperFooterContent
                         title="EmoticBox"
                         paragraph="다양한 이모티콘을 구매하고 싶으시다면?"
-                        picture="#"
+                        picture="/images/emotic-log-non-bg.svg"
                         link="#"
                     />
-                </div>
-                <div className="upper__column">
+
                     <UpperFooterContent
                         title="EmoticBox developer"
                         paragraph="자신의 플랫폼에 EmoticBox SDK를 적용하고 싶으시다면?"
@@ -73,13 +76,13 @@ function Footer() {
                         link="#"
                     />
                 </div>
-            </div>
-            <div className="footer__lower">
-                <div className="lower__column">
-                    <LowerFooterRightContent />
-                </div>
-                <div className="lower__column">
-                    <LowerFooterLeftContent />
+                <div className="footer__lower">
+                    <div className="lower__column">
+                        <LowerFooterRightContent />
+                    </div>
+                    <div className="lower__column">
+                        <LowerFooterLeftContent />
+                    </div>
                 </div>
             </div>
         </div>

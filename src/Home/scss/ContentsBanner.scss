@@ -1,17 +1,14 @@
-.contents-banner--background {
-    // background-color: #707070;
-}
-
 .contents-banner {
     font-family: "Noto Sans KR", sans-serif;
     box-sizing: border-box;
     height: 350px;
     width: 1200px;
     margin: 0 auto;
-    background-color: #fbfbfb;
     display: flex;
     flex-direction: column;
-    padding: 30px 150px;
+    justify-content: space-around;
+    padding: 50px 150px;
+    border-radius: 50px;
     &__column--flex-column {
         display: flex;
         flex-direction: column;
@@ -19,15 +16,22 @@
     }
     &__title {
         margin: 0;
+        font-weight: 300;
     }
     &__subtitle {
         margin: 0;
+        font-weight: 300;
         color: #999999;
     }
     &__column--flex-row {
         margin-top: 50px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    &__column {
+        display: flex;
+        justify-content: center;
     }
 }
