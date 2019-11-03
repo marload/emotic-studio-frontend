@@ -1,0 +1,23 @@
+.sub-nav {
+    &__wrapper {
+        display: table;
+    }
+    &__header {
+        display: table-cell;
+        vertical-align: middle;
+        height: 30px;
+        width: 90px;
+        border-radius: 3px;
+        background-color: #ea5433;
+        color: white;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+    &__container {
+        display: inline-block;
+        // width: 100px;
+        padding: 10px 10px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    }
+}

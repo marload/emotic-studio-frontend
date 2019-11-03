@@ -1,0 +1,31 @@
+.process-item {
+    padding: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 6px -6px #777;
+    &__paragraph {
+        font-size: 0.7rem;
+    }
+    img {
+        height: 50px;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        &-name {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 400;
+            font-size: 0.7rem;
+            margin-left: 10px;
+        }
+    }
+    &__order-number {
+        color: #f8c700;
+        font-weight: 700;
+    }
+}

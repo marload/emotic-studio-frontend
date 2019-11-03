@@ -14,7 +14,7 @@ function About() {
                 수 있는 기업들과 연결시켜 드립니다.
             </p>
             <p className="about__paragraph">
-                EmoticBox가 최대한 여러문들의 표현을 수용하는 만큼, 여러분들은{" "}
+                EmoticBox가 최대한 여러분들의 표현을 수용하는 만큼, 여러분들은{" "}
                 <u>
                     <strong>저작권</strong>
                 </u>

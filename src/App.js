@@ -2,10 +2,11 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 import Header from "./Interface/Header";
-import Footer from "./Interface/Footer";
+// import Footer from "./Interface/Footer";
 
 import Home from "./Home";
 import GuideLine from "./GuideLine";
+import Faq from "./Faq";
 
 import "./scss/App.scss";
 
@@ -16,10 +17,10 @@ const App = () => {
             <div className="contents">
                 <Route exact path="/" component={Home} />
                 <Route exact path="/guide" component={GuideLine} />
-                <Route exact path="/faq" component={Home} />
+                <Route exact path="/faq" component={Faq} />
                 <Route exact path="/mystudio" component={Home} />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
