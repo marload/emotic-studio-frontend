@@ -18,19 +18,13 @@ function Header() {
                 </div>
                 <div className="header__column">
                     <nav className="header__nav">
-                        <Link
-                            to="#가이드라인"
-                            className="nav__guide-line nav-item"
-                        >
+                        <Link to="/guide" className="nav__guide-line nav-item">
                             가이드 라인
                         </Link>
-                        <Link to="#FAQ" className="nav__faq nav-item">
+                        <Link to="/faq" className="nav__faq nav-item">
                             FAQ
                         </Link>
-                        <Link
-                            to="#마이스튜디오"
-                            className="nav__my-sutdio nav-item"
-                        >
+                        <Link to="mystudio" className="nav__my-sutdio nav-item">
                             마이 스튜디오
                         </Link>
                         <span className="nav__language">

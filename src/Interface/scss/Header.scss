@@ -25,6 +25,10 @@ header {
             text-decoration: none;
             color: #999999;
             font-size: 0.8rem;
+            -webkit-transition: color 300ms ease-out;
+            -moz-transition: color 300ms ease-out;
+            -o-transition: color 300ms ease-out;
+            transition: color 300ms ease-out;
         }
         .nav-item:hover {
             color: black;

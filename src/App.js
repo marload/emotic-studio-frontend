@@ -5,15 +5,20 @@ import Header from "./Interface/Header";
 import Footer from "./Interface/Footer";
 
 import Home from "./Home";
+import GuideLine from "./GuideLine";
+
+import "./scss/App.scss";
 
 const App = () => {
     return (
         <div className="App">
             <Header />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/guide" component={Home} />
-            <Route exact path="/faq" component={Home} />
-            <Route exact path="/mystudio" component={Home} />
+            <div className="contents">
+                <Route exact path="/" component={Home} />
+                <Route exact path="/guide" component={GuideLine} />
+                <Route exact path="/faq" component={Home} />
+                <Route exact path="/mystudio" component={Home} />
+            </div>
             <Footer />
         </div>
     );

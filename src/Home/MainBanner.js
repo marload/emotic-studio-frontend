@@ -26,7 +26,11 @@ function MainBanner() {
                 EmoticStudio에 등록된 이모티콘은 EmoticBox<br></br>
                 통해 여러 플랫폼 유저들에게 사용 됩니다.
             </p>
-            <Link to="#등록" className="main-banner__reg-link">
+            <Link
+                to="#등록"
+                className="main-banner__reg-link"
+                style={{ textDecoration: "none" }}
+            >
                 <Button
                     className={classes.Button}
                     variant="contained"

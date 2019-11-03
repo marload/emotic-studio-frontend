@@ -11,8 +11,12 @@ function UpperFooterContent({ title, paragraph, picture, link }) {
                 <div className="upper-footer-contents__column">
                     <h4>{title}</h4>
                     <p>{paragraph}</p>
-                    <Link to={link} className="upper-footer-contents__link">
-                        바로가기 >
+                    <Link
+                        to={link}
+                        className="upper-footer-contents__link"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <span>바로가기 ></span>
                     </Link>
                 </div>
                 <div className="upper-footer-contents__column">
@@ -31,11 +35,19 @@ function LowerFooterRightContent() {
     return (
         <div className="lower-footer-right-content">
             <div className="lower-footer-right-content__column">
-                <Link className="lower-footer-right-content__link" to="#">
+                <Link
+                    className="lower-footer-right-content__link"
+                    to="#"
+                    style={{ textDecoration: "none" }}
+                >
                     개인 정보 보호법
                 </Link>
-                <Link className="lower-footer-right-content__link" to="#">
-                    이용 약관
+                <Link
+                    className="lower-footer-right-content__link"
+                    to="#"
+                    style={{ textDecoration: "none" }}
+                >
+                    이용약관
                 </Link>
             </div>
             <div className="lower-footer-right-content__column">

@@ -28,13 +28,30 @@
 
 .footer {
     box-sizing: border-box;
-    // height: 50px;
-    // width: 1200px;
     margin: 0 auto;
     &__upper {
         background-color: #424347;
         text-align: center;
         display: block;
         height: 280px;
+    }
+    &__lower {
+        // display: inline-block;
+        background-color: #393a3e;
+        border-top: 1px solid #707070;
+        padding: 40px 0px;
+    }
+}
+
+.lower-footer-right-content {
+    &__link {
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 300;
+        color: #999999;
+    }
+    &__email {
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: 300;
+        color: #999999;
     }
 }
