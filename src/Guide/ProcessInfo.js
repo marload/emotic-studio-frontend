@@ -43,7 +43,7 @@ const processInfoItemData = [
 function ProcessInfoItem({ order, title, paragraph, picture }) {
     return (
         <div className="process-item">
-            <img className="process-item__image" src={picture}></img>
+            <img className="process-item__image" alt="item" src={picture}></img>
             <div className="process-item__title">
                 <div className="process-item__order-number">{order}</div>
                 <div className="process-item__title-name">{title}</div>

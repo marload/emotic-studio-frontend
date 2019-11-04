@@ -12,6 +12,32 @@ class Navigation extends React.Component {
         };
     }
 
+    checkedTabStyle = {
+        display: "block",
+        textDecoration: "none",
+        fontFamily: ["Noto Sans KR", "sans-serif"],
+        fontWeight: 400,
+        color: "#DE3621",
+        fontSize: "0.7rem",
+        marginBottom: "20px"
+    };
+
+    uncheckedTabStyle = {
+        display: "block",
+        textDecoration: "none",
+        fontFamily: ["Noto Sans KR", "sans-serif"],
+        fontWeight: 400,
+        color: "black",
+        fontSize: "0.7rem",
+        marginBottom: "20px"
+    };
+
+    changeCheckedTab(tabNumber) {
+        this.setState({
+            checkedTab: tabNumber
+        });
+    }
+
     render() {
         return (
             <div className="sub-nav">
@@ -22,13 +48,21 @@ class Navigation extends React.Component {
                         </header>
                     </div>
                     <ul className="sub-nav__list">
-                        {this.props.data.map(data => {
+                        {this.props.data.map((data, idx) => {
                             return (
                                 <li className="sub-nav__item">
-                                    <Link to={data.link}>
-                                        <span className="item__text">
-                                            {data.title}
-                                        </span>
+                                    <Link
+                                        to={data.link}
+                                        style={
+                                            idx === this.state.checkedTab
+                                                ? this.checkedTabStyle
+                                                : this.uncheckedTabStyle
+                                        }
+                                        onClick={() => {
+                                            this.changeCheckedTab(idx);
+                                        }}
+                                    >
+                                        {data.title}
                                     </Link>
                                 </li>
                             );
