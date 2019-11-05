@@ -1,5 +1,6 @@
 .sub-nav {
-    display: inline-block;
+    // display: inline-block;
+    float: left;
     &__wrapper {
         display: table;
         position: absolute;
