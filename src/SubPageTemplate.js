@@ -8,7 +8,7 @@ function SubPageTemplate({ header, data, contentsJSX }) {
     return (
         <div className="sub-page">
             <Navigation header={header} data={data} />
-            <Contents children={[<span>Hell2</span>, <span>Hello</span>]} />
+            <Contents children={contentsJSX} />
         </div>
     );
 }

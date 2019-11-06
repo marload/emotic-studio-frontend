@@ -35,7 +35,11 @@ const navigationData = [
 function Faq() {
     return (
         <div className="faq">
-            <SubPageTemplate header="FAQ" data={navigationData} />
+            <SubPageTemplate
+                header="FAQ"
+                data={navigationData}
+                contentsJSX={[<span>A</span>, <span>B</span>]}
+            />
         </div>
     );
 }
