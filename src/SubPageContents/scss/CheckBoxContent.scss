@@ -1,0 +1,20 @@
+.check-box-content {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    &__title {
+        align-content: right;
+        float: left;
+        margin-right: 30px;
+        font-size: 0.9rem;
+    }
+    &__checkbox-grid {
+        .checkbox-grid__element {
+            .checkbox-grid__name {
+                font-size: 0.7rem;
+                opacity: 0.6;
+            }
+            display: inline-block;
+            margin-right: 30px;
+        }
+    }
+}

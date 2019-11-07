@@ -1,6 +1,8 @@
 import React from "react";
 import SubPageTemplate from "./SubPageTemplate";
 
+import CheckBoxContent from "./SubPageContents/CheckBoxContent";
+
 const navigationData = [
     {
         title: "서비스 설정",
@@ -32,13 +34,29 @@ const navigationData = [
     }
 ];
 
+const stickerGenreCheckBoxData = [
+    "Sticker",
+    "Animated Sticker",
+    "AAAAAAAAAAAAA",
+    "AAAAAAAAAAAAA",
+    "AAAAAAAAAAAAA",
+    "AAAAAAAAAAAAA",
+    "AAAAAAAAAAAAA"
+];
+
 function Faq() {
     return (
         <div className="faq">
             <SubPageTemplate
                 header="FAQ"
                 data={navigationData}
-                contentsJSX={[<span>A</span>, <span>B</span>]}
+                contentsJSX={[
+                    <CheckBoxContent
+                        title="스티커 종류"
+                        checkBox={{ stickerGenreCheckBoxData }}
+                    />,
+                    <span>B</span>
+                ]}
             />
         </div>
     );
