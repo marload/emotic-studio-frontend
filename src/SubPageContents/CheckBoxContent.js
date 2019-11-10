@@ -9,6 +9,11 @@ class CheckBoxContent extends React.Component {
             <div className="check-box-content">
                 <div className="check-box-content__title">
                     {this.props.title}
+                    {this.props.isRequire ? (
+                        <span style={{ color: "red" }}> *</span>
+                    ) : (
+                        <span></span>
+                    )}
                 </div>
                 <div className="check-box-content__checkbox-grid">
                     {this.props.checkBox.stickerGenreCheckBoxData.map(data => {
@@ -21,7 +26,6 @@ class CheckBoxContent extends React.Component {
                             </div>
                         );
                     })}
-                    {console.log(this.props)}
                 </div>
             </div>
         );

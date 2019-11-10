@@ -54,6 +54,7 @@ function Faq() {
                     <CheckBoxContent
                         title="스티커 종류"
                         checkBox={{ stickerGenreCheckBoxData }}
+                        isRequire={true}
                     />,
                     <span>B</span>
                 ]}
