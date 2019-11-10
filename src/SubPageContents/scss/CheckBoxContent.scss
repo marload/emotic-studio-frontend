@@ -3,11 +3,16 @@
     font-weight: 300;
     &__title {
         align-content: right;
-        float: left;
         margin-right: 30px;
         font-size: 0.9rem;
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+        text-align: end;
     }
     &__checkbox-grid {
+        display: inline-block;
+        width: 600px;
         .checkbox-grid__element {
             .checkbox-grid__name {
                 font-size: 0.7rem;
