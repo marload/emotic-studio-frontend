@@ -2,6 +2,7 @@ import React from "react";
 import SubPageTemplate from "./SubPageTemplate";
 
 import CheckBoxContent from "./SubPageContents/CheckBoxContent";
+import SubPageContentTemplate from "./SubPageContents/SubPangeContentTemplate";
 
 const navigationData = [
     {
@@ -56,7 +57,10 @@ function Faq() {
                         checkBox={{ stickerGenreCheckBoxData }}
                         isRequire={true}
                     />,
-                    <span>B</span>
+                    <span>B</span>,
+                    <SubPageContentTemplate title="Hello" isRequire={true}>
+                        <span>as</span>
+                    </SubPageContentTemplate>
                 ]}
             />
         </div>

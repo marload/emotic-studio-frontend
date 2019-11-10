@@ -1,33 +1,30 @@
 import React from "react";
 
+import SubPageContentTemplate from "./SubPangeContentTemplate";
+
 import "./scss/CheckBoxContent.scss";
 import Checkbox from "@material-ui/core/Checkbox";
 
 class CheckBoxContent extends React.Component {
     render() {
         return (
-            <div className="check-box-content">
-                <div className="check-box-content__title">
-                    {this.props.title}
-                    {this.props.isRequire ? (
-                        <span style={{ color: "red" }}> *</span>
-                    ) : (
-                        <span></span>
-                    )}
-                </div>
-                <div className="check-box-content__checkbox-grid">
+            <SubPageContentTemplate
+                title={this.props.title}
+                isRequire={this.props.isRequire}
+            >
+                <div className="checkbox-content">
                     {this.props.checkBox.stickerGenreCheckBoxData.map(data => {
                         return (
-                            <div className="checkbox-grid__element">
+                            <div className="checkbox-content__ckbox-element">
                                 <Checkbox color="default" />
-                                <span className="checkbox-grid__name">
+                                <span className="checkbox-content__element-name">
                                     {data}
                                 </span>
                             </div>
                         );
                     })}
                 </div>
-            </div>
+            </SubPageContentTemplate>
         );
     }
 }
