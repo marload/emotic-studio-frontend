@@ -3,6 +3,7 @@ import SubPageTemplate from "./SubPageTemplate";
 
 import CheckBoxContent from "./SubPageContents/CheckBoxContent";
 import SubPageContentTemplate from "./SubPageContents/SubPangeContentTemplate";
+import TextAreaContent from "./SubPageContents/TextAreaContent";
 
 const navigationData = [
     {
@@ -60,7 +61,8 @@ function Faq() {
                     <span>B</span>,
                     <SubPageContentTemplate title="Hello" isRequire={true}>
                         <span>as</span>
-                    </SubPageContentTemplate>
+                    </SubPageContentTemplate>,
+                    <TextAreaContent title="Hello" rows="2"></TextAreaContent>
                 ]}
             />
         </div>
