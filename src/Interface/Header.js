@@ -21,7 +21,7 @@ function Header() {
                         <Link to="/guide" className="nav__guide-line nav-item">
                             가이드 라인
                         </Link>
-                        <Link to="/faq" className="nav__faq nav-item">
+                        <Link to="/faq/service" className="nav__faq nav-item">
                             FAQ
                         </Link>
                         <Link to="mystudio" className="nav__my-sutdio nav-item">
