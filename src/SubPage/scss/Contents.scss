@@ -1,12 +1,11 @@
 .contents-page {
-    &__elements {
-        width: 100px;
-        box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
-        margin: 10px 10px;
-        width: 88%;
-        box-sizing: border-box;
-        border-radius: 5px;
-        padding: 30px 70px;
-        float: right;
-    }
+  max-width: 1000px;
+  &__elements {
+    width: 800px;
+    box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    margin: 10px 20px;
+    border-radius: 5px;
+    padding: 30px 50px;
+    float: right;
+  }
 }
