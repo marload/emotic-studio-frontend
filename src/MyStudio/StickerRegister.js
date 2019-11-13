@@ -6,6 +6,8 @@ import ImageUploadContent from "../SubPageContents/ImageUploadContent";
 
 import SubPageTemplate from "../SubPageTemplate";
 
+import SubPageCompleteButton from "../SubPageContents/SugPageCompleteButton";
+
 class StickerRegisterPart1 extends React.Component {
   constructor() {
     super();
@@ -66,14 +68,6 @@ class StickerRegisterPart1 extends React.Component {
   }
 }
 
-{
-  /* <SubPageTemplate
-  header="MyStudio"
-  data={navigationData}
-  contentsJSX={StickerRegisterPart1}
-></SubPageTemplate>; */
-}
-
 const stickerRegisterComponentsList = [
   <StickerRegisterPart1 />,
   <ImageUploadContent title="스티커 파일 업로드"></ImageUploadContent>
@@ -104,6 +98,7 @@ export default () => {
       header="MyStudio"
       data={navigationData}
       contentsJSX={stickerRegisterComponentsList}
+      completeButton={<SubPageCompleteButton text="제안하기" />}
     ></SubPageTemplate>
   );
 };
