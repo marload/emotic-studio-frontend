@@ -1,0 +1,46 @@
+.image-upload-content {
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  &__clause-check {
+    display: inline-block;
+    margin: 0px 10px;
+    border: 1px solid #ea5433;
+    color: #ea5433;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 2px 5px;
+  }
+  &__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 60px;
+  }
+  &__grid-element {
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    outline: none;
+    cursor: pointer;
+    .grid-element__plus-icon {
+      font-size: 3rem;
+      color: #d1d1d1;
+      transition: color 0.5s;
+    }
+    transition: border 0.5s;
+  }
+  &__grid-element:hover {
+    border: 1px solid #ea5433;
+    .grid-element__plus-icon {
+      color: #ea5433;
+    }
+  }
+}

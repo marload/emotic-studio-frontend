@@ -2,6 +2,9 @@ import React from "react";
 
 import CheckBoxContent from "../SubPageContents/CheckBoxContent";
 import TextAreaContent from "../SubPageContents/TextAreaContent";
+import ImageUploadContent from "../SubPageContents/ImageUploadContent";
+
+import SubPageTemplate from "../SubPageTemplate";
 
 class StickerRegisterPart1 extends React.Component {
   constructor() {
@@ -63,4 +66,44 @@ class StickerRegisterPart1 extends React.Component {
   }
 }
 
-export default [<StickerRegisterPart1 />];
+{
+  /* <SubPageTemplate
+  header="MyStudio"
+  data={navigationData}
+  contentsJSX={StickerRegisterPart1}
+></SubPageTemplate>; */
+}
+
+const stickerRegisterComponentsList = [
+  <StickerRegisterPart1 />,
+  <ImageUploadContent title="스티커 파일 업로드"></ImageUploadContent>
+];
+
+const navigationData = [
+  {
+    title: "스티커 등록",
+    link: "/mystudio/sticker-register"
+  },
+  {
+    title: "스티커 관리",
+    link: "/mystudio/sticker-manage"
+  },
+  {
+    title: "계정 관리",
+    link: "/mystudio/account-manage"
+  },
+  {
+    title: "지갑",
+    link: "/mystudio/wallet"
+  }
+];
+
+export default () => {
+  return (
+    <SubPageTemplate
+      header="MyStudio"
+      data={navigationData}
+      contentsJSX={stickerRegisterComponentsList}
+    ></SubPageTemplate>
+  );
+};

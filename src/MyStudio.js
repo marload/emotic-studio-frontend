@@ -3,6 +3,9 @@ import React from "react";
 import SubPageTemplate from "./SubPageTemplate";
 
 import StickerRegister from "./MyStudio/StickerRegister";
+import ImageUploadContent from "./SubPageContents/ImageUploadContent";
+
+import { Route } from "react-router-dom";
 
 import Header from "./Interface/Header";
 
@@ -29,11 +32,11 @@ class MyStudio extends React.Component {
   render() {
     return (
       <div className="my-studio">
-        <SubPageTemplate
-          header="MyStudio"
-          data={navigationData}
-          contentsJSX={StickerRegister}
-        ></SubPageTemplate>
+        <Route
+          exact
+          path="/mystudio/sticker-register"
+          component={StickerRegister}
+        ></Route>
       </div>
     );
   }
