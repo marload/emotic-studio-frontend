@@ -41,12 +41,12 @@ class StickerRegisterPart1 extends React.Component {
                 <TextAreaContent
                     title="키워드"
                     isRequire={false}
-                    rows={8}
+                    rows={6}
                 ></TextAreaContent>
                 <TextAreaContent
                     title="스티커 스토리"
                     isRequire={false}
-                    rows={8}
+                    rows={6}
                 ></TextAreaContent>
                 <CheckBoxContent
                     title="스티커 종류"

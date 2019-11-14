@@ -1,0 +1,37 @@
+.sticker-list-view {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.6;
+    }
+    &__grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 60px;
+    }
+    &__sticker-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__sticker-image {
+        height: 200px;
+        width: 155px;
+        border-radius: 15px;
+        border-radius: 15px;
+        border: 1px solid #ebebeb;
+        background-color: #fdfdfd;
+        transition: border 0.5s;
+    }
+    &__sticker-image:hover {
+        border: 1px solid #ea5433;
+    }
+    &__sticker-title {
+        margin-top: 15px;
+    }
+}
