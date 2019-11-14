@@ -1,0 +1,42 @@
+.footer {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    &__top {
+        background-color: #424347;
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        align-items: center;
+        &__icon {
+            width: 150px;
+            height: 150px;
+        }
+        &__content {
+            display: flex;
+        }
+        &__title {
+            color: #ffffff;
+        }
+        &__question {
+            color: #999999;
+        }
+        &__link {
+            margin-top: 15px;
+            color: #999999;
+        }
+        &__text-content {
+            margin-right: 70px;
+        }
+        &__left {
+            border-right: 1px solid #707070;
+            padding-right: 100px;
+        }
+        &__right {
+            padding-left: 100px;
+        }
+    }
+    &__bottom {
+        background-color: #393a3e;
+        border-top: 1px solid #707070;
+    }
+}
