@@ -24,7 +24,10 @@ function Header() {
                         <Link to="/faq/service" className="nav__faq nav-item">
                             FAQ
                         </Link>
-                        <Link to="mystudio" className="nav__my-sutdio nav-item">
+                        <Link
+                            to="/mystudio/sticker-register"
+                            className="nav__my-sutdio nav-item"
+                        >
                             마이 스튜디오
                         </Link>
                         <span className="nav__language">

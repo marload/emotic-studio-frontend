@@ -19,12 +19,12 @@ class Footer extends React.Component {
                                     다양한 이모티콘을 구매하고 싶으시다면?
                                 </div>
                                 <div className="footer__top__link">
-                                    바로가기 >
+                                    바로가기 <b>></b>
                                 </div>
                             </div>
                             <img
-                                className="footer__top__icon"
-                                src="images/footer-left-icon.svg"
+                                className="footer__top__icon__left"
+                                src="/images/footer-left-icon.svg"
                                 alt="emoticbox"
                             ></img>
                         </div>
@@ -40,12 +40,12 @@ class Footer extends React.Component {
                                     싶다면?
                                 </div>
                                 <div className="footer__top__link">
-                                    바로가기 >
+                                    바로가기 <b>></b>
                                 </div>
                             </div>
                             <img
-                                className="footer__top__icon"
-                                src="images/footer-right-icon.svg"
+                                className="footer__top__icon__right"
+                                src="/images/footer-right-icon.svg"
                                 alt="emoticbox"
                             ></img>
                         </div>
@@ -62,9 +62,15 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div className="footer__bottom__right">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook-f"></i>
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
                     </div>
                 </div>
             </footer>

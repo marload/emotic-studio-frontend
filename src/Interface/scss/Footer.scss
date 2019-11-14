@@ -7,9 +7,11 @@
         justify-content: center;
         height: 300px;
         align-items: center;
-        &__icon {
+        &__icon__left {
             width: 150px;
-            height: 150px;
+        }
+        &__icon__right {
+            width: 100px;
         }
         &__content {
             display: flex;
@@ -36,7 +38,28 @@
         }
     }
     &__bottom {
+        height: 80px;
         background-color: #393a3e;
         border-top: 1px solid #707070;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__left {
+            color: #999999;
+            margin-right: 300px;
+            .footer__bottom__first {
+                span {
+                    margin-right: 40px;
+                }
+            }
+        }
+        &__right {
+            font-size: 1.3rem;
+            color: #ffffff;
+            div {
+                display: inline-block;
+                margin: 0px 15px;
+            }
+        }
     }
 }
