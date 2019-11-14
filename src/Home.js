@@ -70,6 +70,7 @@ function Home() {
             <ContentsBanner
                 data={contentsBannerData1}
                 backgroundColor="#fbfbfb"
+                stlye={{ marginTop: "50px;" }}
             />
             <ContentsBanner
                 data={contentsBannerData2}
