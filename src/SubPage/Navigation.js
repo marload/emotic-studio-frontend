@@ -62,7 +62,9 @@ class Navigation extends React.Component {
                                             this.changeCheckedTab(idx);
                                         }}
                                     >
-                                        {data.title}
+                                        <span className="sub-nav__item__text">
+                                            {data.title}
+                                        </span>
                                     </Link>
                                 </li>
                             );
