@@ -23,8 +23,9 @@
         width: 160px;
         padding: 10px 30px;
         background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+        border-radius: 2px;
+        border: 1px solid #ebebeb;
+        border-top: 3px solid orange;
         position: relative;
         box-sizing: border-box;
     }

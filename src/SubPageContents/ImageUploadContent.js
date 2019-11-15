@@ -1,8 +1,52 @@
 import React from "react";
 
+import FileDrop from "react-file-drop";
+
 import "./scss/ImageUploadContent.scss";
 
 class ImageUploadContent extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            imageOn: [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ]
+        };
+    }
+
+    imageDrop(idx) {
+        console.log("drop");
+        const imageOn = this.state.imageOn;
+        imageOn[idx] = true;
+        this.setState({
+            imageOn: imageOn,
+            ...this.setState
+        });
+    }
+
     render() {
         return (
             <div className="image-upload-content">
@@ -14,17 +58,32 @@ class ImageUploadContent extends React.Component {
                     </div>
                 </div>
                 <div className="image-upload-content__grid-wrapper">
-                    {[...Array(24).keys()].map(key => {
-                        return (
-                            <button
-                                className="image-upload-content__grid-element"
-                                key={key}
-                            >
-                                <span className="grid-element__plus-icon">
-                                    +
-                                </span>
-                            </button>
-                        );
+                    {[...Array(24).keys()].map((key, idx) => {
+                        if (this.state.imageOn[idx] === true) {
+                            return (
+                                <img
+                                    src={"/images/lion/" + (idx + 1) + ".gif"}
+                                    alt="img"
+                                    key={key}
+                                    className="image-upload-content__grid-element"
+                                ></img>
+                            );
+                        } else {
+                            return (
+                                <div
+                                    className="image-upload-content__grid-element"
+                                    key={key}
+                                >
+                                    <FileDrop
+                                        onDrop={() => this.imageDrop(idx)}
+                                    >
+                                        <div className="grid-element__plus-icon">
+                                            +
+                                        </div>
+                                    </FileDrop>
+                                </div>
+                            );
+                        }
                     })}
                 </div>
             </div>

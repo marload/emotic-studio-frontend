@@ -13,7 +13,7 @@ import "./scss/App.scss";
 
 const App = () => {
     return (
-        <div className="App">
+        <div className="App" style={{ backgroundColor: "#fcfcfc" }}>
             <Header />
             <div className="main-contents">
                 <Route exact path="/" component={Home} />

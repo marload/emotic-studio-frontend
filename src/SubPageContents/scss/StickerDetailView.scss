@@ -1,22 +1,17 @@
-.sticker-list-view {
+.sticker-detail-view {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     &__title {
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-size: 1.2rem;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     &__grid-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 30px;
         grid-column-gap: 60px;
-    }
-    &__sticker-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     &__sticker-image {
         height: 200px;
@@ -30,8 +25,5 @@
     &__sticker-image:hover {
         border: 1px solid #ea5433;
         box-shadow: 0 10px 6px -6px #777;
-    }
-    &__sticker-title {
-        margin-top: 15px;
     }
 }

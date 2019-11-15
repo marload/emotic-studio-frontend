@@ -20,7 +20,21 @@ class StickerManagementRejected extends React.Component {
         return (
             <div className="sticker-management-rejected">
                 <StickerListView
-                    title="반려된 이모티콘"
+                    title={
+                        <div
+                            style={{
+                                borderRadius: "15px",
+                                display: "inline-block",
+                                padding: "5px 7px",
+                                color: "red",
+                                border: "1px solid red",
+                                fontSize: "0.8rem",
+                                fontWeight: "bold"
+                            }}
+                        >
+                            반려된 이모티콘
+                        </div>
+                    }
                     data={this.state.data}
                 ></StickerListView>
             </div>
@@ -44,7 +58,21 @@ class StickerManagementPending extends React.Component {
         return (
             <div className="sticker-management-pending">
                 <StickerListView
-                    title="심사중인 이모티콘"
+                    title={
+                        <div
+                            style={{
+                                borderRadius: "15px",
+                                display: "inline-block",
+                                padding: "5px 7px",
+                                color: "orange",
+                                border: "1px solid orange",
+                                fontSize: "0.8rem",
+                                fontWeight: "bold"
+                            }}
+                        >
+                            심사중인 이모티콘
+                        </div>
+                    }
                     data={this.state.data}
                 ></StickerListView>
             </div>
@@ -58,7 +86,7 @@ class StickerManagementRegistered extends React.Component {
         this.state = {
             data: [
                 {
-                    title: "헬로! 라이언",
+                    title: <div>헬로! 라이언 </div>,
                     link: "/images/lion/1.gif"
                 },
                 {
@@ -72,7 +100,21 @@ class StickerManagementRegistered extends React.Component {
         return (
             <div className="sticker-management-registered">
                 <StickerListView
-                    title="등록된 이모티콘"
+                    title={
+                        <div
+                            style={{
+                                borderRadius: "15px",
+                                display: "inline-block",
+                                padding: "5px 7px",
+                                color: "#32CD32",
+                                border: "1px solid#32CD32",
+                                fontSize: "0.8rem",
+                                fontWeight: "bold"
+                            }}
+                        >
+                            등록된 이모티콘
+                        </div>
+                    }
                     data={this.state.data}
                 ></StickerListView>
             </div>

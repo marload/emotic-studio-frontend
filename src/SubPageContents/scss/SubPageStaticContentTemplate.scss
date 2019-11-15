@@ -1,0 +1,19 @@
+.subpage-static-content-template {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+    &__title {
+        align-content: right;
+        margin-right: 50px;
+        font-size: 0.9rem;
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+        text-align: end;
+        opacity: 0.6;
+    }
+    &__content-area {
+        display: inline-block;
+        width: 600px;
+    }
+}
