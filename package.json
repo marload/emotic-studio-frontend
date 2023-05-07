@@ -11,7 +11,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "recharts": "^1.8.5",
-    "styled-reset": "^4.0.2"
+    "styled-reset": "^4.4.6"
   },
   "scripts": {
     "start": "react-scripts start",
